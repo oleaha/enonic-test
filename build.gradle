@@ -55,6 +55,11 @@ task npmBuild(type: NpmTask, dependsOn: npmInstallForce) {
     args = ["run", "build"]
 }
 
+jar {
+    dependsOn += npmBuild
+}
+
+tasks.test.dependsOn("npmBuild")
 
 rootProject.tasks.getByName("test").dependsOn npmBuild
 rootProject.tasks.getByName("build").dependsOn npmBuild

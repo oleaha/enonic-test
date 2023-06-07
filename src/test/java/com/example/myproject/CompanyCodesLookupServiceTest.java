@@ -7,6 +7,6 @@ public class CompanyCodesLookupServiceTest extends ScriptRunnerSupport
     @Override
     public String getScriptTestFile()
     {
-        return "services/company-codes-lookup-service/company-codes-lookup-service-test.js";
+        return "/services/company-codes-lookup-service/company-codes-lookup-service-test.es6";
     }
 }

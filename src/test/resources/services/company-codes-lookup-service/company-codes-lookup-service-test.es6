@@ -2,13 +2,13 @@ const t = require('/lib/xp/testing');
 
 
 const mockedImportedFuncs = {};
-t.mock("/lib/nace.js", mockedImportedFuncs);
+t.mock("/lib/nace.es6", mockedImportedFuncs);
 
 export function mockGetNaceCodes(mockedReturn) {
     mockedImportedFuncs.getNaceCodes = function () {
         return mockedReturn;
     }
-    t.mock("/lib/nace.js", mockedImportedFuncs);
+    t.mock("/lib/nace.es6", mockedImportedFuncs);
 }
 
 const items = [
