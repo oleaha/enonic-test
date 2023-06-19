@@ -20,7 +20,7 @@ dependencies {
     include "com.enonic.xp:lib-project:${xpVersion}"
     include "com.enonic.xp:lib-task:${xpVersion}"
     testImplementation "com.enonic.xp:testing:${xpVersion}"
-    include 'com.enonic.lib:lib-graphql:2.0.3'
+    include 'com.enonic.lib:lib-graphql:2.1.0'
     include 'com.enonic.lib:lib-guillotine:6.0.5'
     include "com.enonic.lib:lib-graphql-playground:0.0.2"
     include "com.enonic.xp:lib-io:${xpVersion}"
